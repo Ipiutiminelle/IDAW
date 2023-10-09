@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50;
+    justify-content: space-between;
+   
+
+}
+
+h1{
+    font-size: 20
+    ;
+}
