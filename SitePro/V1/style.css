@@ -23,7 +23,7 @@ A:hover{ color: aliceblue;
     color:black;
     opacity: 90%;
     text-decoration:none;
-
+    font-size: 50px;
 }
 
 .imagetitre{
@@ -36,9 +36,9 @@ A:hover{ color: aliceblue;
     padding-top: -10px;
 }
 
-.titresite{
+.titreSite{
     font-family: fantasy;
-    font-size: 100;
+    font-size: 100px;
     text-align : center; 
     font-weight: bold;   
 }
@@ -52,7 +52,7 @@ A:hover{ color: aliceblue;
     font-size: 30;
     justify-content: space-between;
     background-color: pink;
-    padding:  40px;
+    padding:  10px;
     border-radius: 30px;}
 
     .glow {
@@ -72,4 +72,8 @@ A:hover{ color: aliceblue;
         }
       }
       
+      .description1{
+        font-size: 80;
+      }
+
       
