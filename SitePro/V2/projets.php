@@ -17,14 +17,12 @@ require_once('template_header.php');
         
     </header>
 
-    <nav class="menu">
-        <ul class="nav">
-        <a class="nav1" href="index.html">Accueil</a>
-        <a class="nav1" href="cv.html">CV</a>
-        <a class="nav1" href="hobbies.html">Hobbies</a>
-        <a class="nav1 active" href="projets.html">Projets</a>
-        </ul>
-        </nav>
+    <nav>
+        <?php
+            require_once('template_menu.php');
+            renderMenuToHTML('projets');
+        ?>
+    </nav>
        
         <h1 class="description1">"Je veux gagner de l'argent avec mes connaissances FRAUDULEUSES en developpement web"</h1>
         
