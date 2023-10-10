@@ -6,7 +6,7 @@ if(isset($_GET['page'])) {
 $currentPageId = $_GET['page'];
 }
 ?>
-<header class="bandeau_haut">
+<header>
 <p class="titreSite">Présentation du magnifique <br> Géry Bellanger</p>
 </header>
 <?php
@@ -14,7 +14,7 @@ renderMenuToHTML($currentPageId);
 ?>
 <section class="corps">
 <?php
-$pageToInclude = $currentPageId . ".php";
+$pageToInclude = "fr/" .$currentPageId . ".php";
 if(is_readable($pageToInclude))
 require_once($pageToInclude);
 else

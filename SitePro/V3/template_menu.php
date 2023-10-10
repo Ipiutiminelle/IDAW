@@ -1,10 +1,11 @@
 <?php
     function renderMenuToHTML($currentPageId) {
       $mymenu = array(
-      'index' => 'Accueil',
+      'accueil' => 'Accueil',
       'cv' => 'Cv',
       'hobbies' => 'Hobbies',
-      'projets' => 'Mes Projets'
+      'projets' => 'Projets',
+      'contact' => 'Contact'
       );
       echo "<header>
       <nav class=\"menu\">
@@ -22,3 +23,4 @@
       </nav>";
     }
   ?>
+
