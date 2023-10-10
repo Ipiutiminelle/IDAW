@@ -17,7 +17,7 @@
           echo "<a class=\"nav1\" href=\"${pageId}.php\">${pageParameters}</a>";
         }
       }
-      echo "
+      echo "\n<img class=\"profil-image\" src=\"logo_site.png\" alt=\"Shrekipotter\">
       <ul>
       </nav>";
     }
