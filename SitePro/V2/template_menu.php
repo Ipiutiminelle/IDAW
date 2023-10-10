@@ -11,10 +11,10 @@
             <ul class=\"nav\">";
       foreach($mymenu as $pageId => $pageParameters) {
         if($currentPageId == $pageId){
-          echo "<a class=\"nav1 active\" href=\"index.php?${pageId}.php\">${pageParameters}</a>";
+          echo "<a class=\"nav1 active\" href=\"${pageId}.php\">${pageParameters}</a>";
         }
         else{
-          echo "<a class=\"nav1\" href=\"index.php?'${pageId}'.php\">${pageParameters}</a>";
+          echo "<a class=\"nav1\" href=\"${pageId}.php\">${pageParameters}</a>";
         }
       }
       echo "\n<img class=\"profil-image\" src=\"logo_site.png\" alt=\"Shrekipotter\">
