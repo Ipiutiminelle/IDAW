@@ -9,9 +9,9 @@ $users = array(
 $login = "anonymous";
 $errorText = "";
 $successfullyLogged = false;
-if (isset($_GET['login']) && isset($_GET['password'])) {
-   $tryLogin = $_GET['login'];
-   $tryPwd = $_GET['password'];
+if (isset($_POST['login']) && isset($_POST['password'])) {
+   $tryLogin = $_POST['login'];
+   $tryPwd = $_POST['password'];
    // si login existe et password correspond
    if (array_key_exists($tryLogin, $users) && $users[$tryLogin] == $tryPwd) {
       $successfullyLogged = true;
@@ -27,4 +27,6 @@ if (!$successfullyLogged) {
 }
 ?>
 
-<!-- réponse question 4) => On remarque que le login et le password sont dans l'URL -->
+<!-- réponse question 1.4) => On remarque que le login et le password sont dans l'URL -->
+
+<!-- réponse question 2.3) => POST est plus sécurisée car les données ne sont pas présentes dans l'URL -->
