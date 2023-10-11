@@ -1,4 +1,4 @@
 # IDAW
 Dépôt de IDAW de Géry Bellanger
 
-SAlut à tous et à chacun
+Salut à tous et à chacun

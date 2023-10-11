@@ -1,6 +1,6 @@
 <?php
 echo "<link rel=\"stylesheet\" href=\"" . $_COOKIE['selectedStyle'] . ".css\" type=\"text/css\"media=\"screen\" title=\"default\" charset=\"utf-8\" />";
-
+session_start();
 ?>
 <form id="login_form" action="connected.php" method="POST">
   <table>
@@ -17,4 +17,12 @@ echo "<link rel=\"stylesheet\" href=\"" . $_COOKIE['selectedStyle'] . ".css\" ty
       <td><input type="submit" value="Se connecter..." /></td>
     </tr>
   </table>
+</form>
+
+<?php
+echo "<p>Voilà ton login de Session : " . $_SESSION['Login'] . "</p>";
+?>
+
+<form method="post">
+  <input type="submit" name="supprimer_session.php" value="Déconnexion">
 </form>

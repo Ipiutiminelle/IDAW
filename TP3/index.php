@@ -28,4 +28,4 @@ echo "<link rel=\"stylesheet\" href=\"" . $selectedStyle . ".css\" type=\"text/c
 
 
 
-<!-- réponse 3.Note) 
+<!-- réponse 3.Note) parce que les cookies peuvent être utilisés pour traquer des utilisateurs-->

@@ -1,6 +1,6 @@
 <?php
 echo "<link rel=\"stylesheet\" href=\"" . $_COOKIE['selectedStyle'] . ".css\" type=\"text/css\"media=\"screen\" title=\"default\" charset=\"utf-8\" />";
-
+session_start();
 ?>
 
 
@@ -31,7 +31,23 @@ if (!$successfullyLogged) {
 } else {
    echo "<h1>Bienvenu " . $login . "</h1>";
 }
+
+/*On utilise session_id() pour récupérer l'id de session s'il existe.
+ *Si l'id de session n'existe  pas, session_id() renvoie une chaine
+ *de caractères vide*/
+$id_session = session_id();
+
+$_SESSION['Login'] = $login;
 ?>
+
+<?php
+echo "<p>Voilà ton login de Session : " . $_SESSION['Login'] . "</p>";
+?>
+
+
+<input class="favorite styled" type="button" value="Déconnexion" href="supprimer_session.php" />
+
+<a href='login.php'>login</a>
 
 <!-- réponse question 1.4) => On remarque que le login et le password sont dans l'URL -->
 
