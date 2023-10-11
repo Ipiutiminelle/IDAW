@@ -1,3 +1,21 @@
+<?php
+// Définissez une variable pour stocker le nom du fichier CSS par défaut
+$selectedStyle = 'style1';
+
+// Vérifiez si un cookie "selectedStyle" existe
+if (isset($_COOKIE['selectedStyle'])) {
+    $selectedStyle = $_COOKIE['selectedStyle'];
+}
+
+// Si le formulaire a été soumis, mettez à jour le style sélectionné
+if (isset($_GET['css'])) {
+    $selectedStyle = $_GET['css'];
+    setcookie('selectedStyle', $selectedStyle, '/'); // Enregistrez le choix dans un cookie
+}
+
+echo "<link rel=\"stylesheet\" href=\"" . $selectedStyle . ".css\" type=\"text/css\"media=\"screen\" title=\"default\" charset=\"utf-8\" />";
+?>
+
 <form id="style_form" action="index.php" method="GET">
     <select name="css">
         <option value="style1">style1</option>
@@ -6,24 +24,8 @@
     <input type="submit" value="Appliquer" />
 </form>
 
-<?php
-
-// Récupérez la valeur de l'option sélectionnée dans le formulaire.
-if (isset($_GET['css'])) {
-    $selectedStyle = $_GET['css'];
-
-    // Définissez un cookie pour stocker l'identifiant du style choisi.
-    // Le cookie expirera après 7 jours (86400 secondes x 7 jours).
-    setcookie('selected_style', $selectedStyle, time() + 86400 * 7, '/');
-}
+<a href='login.php'>login</a>
 
 
-// Après avoir stocké le cookie, vous pouvez charger le style en fonction de sa valeur (si nécessaire).
-// Par exemple, vous pourriez avoir une balise link dans votre HTML pour charger le CSS correspondant.
 
-// Exemple de balise link qui charge le CSS en fonction de l'identifiant du style (à placer dans le <head> de votre HTML) :
-if (isset($_COOKIE['selected_style'])) {
-    $selectedStyle = $_COOKIE['selected_style'];
-    echo '<link rel="stylesheet" type="text/css" href="' . $selectedStyle . '.css">';
-}
-?>
+<!-- réponse 3.Note) 

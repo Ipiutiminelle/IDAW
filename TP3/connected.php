@@ -1,4 +1,10 @@
 <?php
+echo "<link rel=\"stylesheet\" href=\"" . $_COOKIE['selectedStyle'] . ".css\" type=\"text/css\"media=\"screen\" title=\"default\" charset=\"utf-8\" />";
+
+?>
+
+
+<?php
 // on simule une base de données
 $users = array(
    // login => password
