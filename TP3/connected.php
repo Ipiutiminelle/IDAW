@@ -45,7 +45,9 @@ echo "<p>Voilà ton login de Session : " . $_SESSION['Login'] . "</p>";
 ?>
 
 
-<input class="favorite styled" type="button" value="Déconnexion" href="supprimer_session.php" />
+<form method="post" action="supprimer_sesssion.php">
+   <input type="submit" value="Exécuter le code PHP">
+</form>
 
 <a href='login.php'>login</a>
 
