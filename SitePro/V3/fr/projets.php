@@ -1,9 +1,9 @@
+<h1 class="description1">Je veux gagner de l'argent avec mes connaissances FRAUDULEUSES en developpement web <br>
+    Voici notamment l'exemple d'un de mes poèmes, sur mon histoire, avec une touche bovine : </h1>
 
-       
-        <h1 class="description1">"Je veux gagner de l'argent avec mes connaissances FRAUDULEUSES en developpement web"</h1>
-        
-
-        <h2>Dans l'obscurité d'une âme vache &#128004 et fourbe,  <br>
+<div class="grande_boite">
+    <div class="petite_boite_1">
+        <h2>Dans l'obscurité d'une âme vache &#128004 et fourbe, <br>
             Un désir sombre s'embusque, se glisse, se corrobore,<br>
             "Je veux gagner de l'argent", clame la voix perfide,<br>
             Mais le prix à payer est bien plus qu'un simple ride.<br>
@@ -34,3 +34,8 @@
             Les connaissances frauduleuses peuvent séduire,<br>
             Mais au bout du chemin, c'est la chute qui attire.<br>
         </h2>
+    </div>
+    <div class="petite_boite_2">
+        <img alt="meuh" src="vache.gif" height="500" />
+    </div>
+</div>

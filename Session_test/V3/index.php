@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require_once("template_header.php");
 require_once("template_menu.php");
 $currentPageId = 'accueil';
@@ -22,15 +24,19 @@ renderMenuToHTML($currentPageId);
         require_once("error.php");
     ?>
     <?php
-    if (empty($_SESSION)) {
+
+
+    ?>
+    <?php
+    if (!isset($_SESSION['Login'])) {
         require_once("formulaire_log.php");
     } else {
         echo "<p> Bienvenu " . $_SESSION['Login'] . "</p>";
         require_once("bouton_supp.php");
     }
     ;
-
     ?>
+
 </section>
 
 

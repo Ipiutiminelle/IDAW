@@ -1,6 +1,13 @@
+<div class="grande_boite">
+        <div class="petite_boite_2">
+                <img alt="meuh" src="L.JPG" height="500" />
+        </div>
+        <div class="petite_boite_1">
+                <p class="glow1">"I enjoy writing books and fighting barehanded with Pharo projects that don't start (I
+                        often lose), and inventing quotes from famous characters." - Jesus </p>
 
-       
-        <h1 class="description1">"J'aime bien écrire des livres et me battre à mains nues avec des projet Pharo qui se lancent pas (je perds souvent)"</h1>
-        
-       
-        
+
+        </div>
+
+
+</div>
