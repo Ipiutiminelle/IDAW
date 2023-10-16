@@ -53,6 +53,7 @@ INSERT INTO `users` (`id`, `name`, `email`) VALUES
 (13, 'Nom13', 'email13@example.com'),
 (14, 'Nom14', 'email14@example.com'),
 (15, 'Nom15', 'email15@example.com');
+(16, 'Evan deux nids', 'pigeon@roucoule.com');
 
 --
 -- Index pour les tables déchargées
