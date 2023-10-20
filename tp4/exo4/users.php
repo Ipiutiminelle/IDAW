@@ -34,7 +34,7 @@ function HTMLTable($resultat)
     }
 }
 
-if(isset()){}
+
 
 // display them in HTML array
 /*** close the database connection ***/
